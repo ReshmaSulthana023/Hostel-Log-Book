@@ -1,0 +1,86 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  color: #333;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h2 {
+  border-bottom: 3px solid #4CAF50;
+  padding-bottom: 8px;
+  color: #2e7d32;
+}
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
+}
+input, select {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 4px;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+button {
+  margin-top: 18px;
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+button:hover {
+  background-color: #45a049;
+}
+hr {
+  margin: 30px 0;
+  border: none;
+  border-bottom: 2px solid #ddd;
+}
+.record {
+  background: #e8f5e9;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 7px rgba(46,125,50,0.3);
+}
+#allStudentsList div.studentRecord {
+  border: 1.5px solid #4CAF50;
+  background: #d0f0c0;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 6px rgba(76,175,80,0.3);
+}
+#allStudentsList h3 {
+  color: #2e7d32;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+}
+#showAllBtn, #clearAllBtn {
+  display: inline-block;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+#dailyLogCount {
+  font-weight: 700;
+  color: #2e7d32;
+  margin-top: 10px;
+}

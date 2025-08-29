@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hostel Login-Logout Book</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h2>Going Out Form</h2>
+  <form id="goingOutForm">
+    <label>Name:
+      <input type="text" id="name" required />
+    </label>
+    <label>Room Number:
+      <input type="text" id="roomNumber" required />
+    </label>
+    <label>Phone Number:
+      <input type="tel" id="phoneNumber" required pattern="[0-9]{10}" placeholder="10 digits" />
+    </label>
+    <label>Time of Going Out:
+      <input type="time" id="goingOutTime" required />
+    </label>
+    <label>Where are you going:
+      <input type="text" id="destination" required />
+    </label>
+    <button type="submit">Log Going Out</button>
+  </form>
+
+  <hr />
+
+  <h2>Return Form</h2>
+  <form id="returnForm">
+    <label>Enter Name to Retrieve Record:
+      <input type="text" id="returnName" required />
+    </label>
+    <button type="submit">Find Record</button>
+  </form>
+
+  <div id="recordDisplay" style="display:none;">
+    <h3>Going Out Record</h3>
+    <div id="recordDetails" class="record"></div>
+    <form id="returnTimeForm">
+      <label>Time of Coming Back:
+        <input type="time" id="returnTime" required />
+      </label>
+      <button type="submit">Log Return</button>
+    </form>
+  </div>
+
+  <button id="showAllBtn">Show All Students</button>
+  <button id="clearAllBtn">Clear All Students Data</button>
+  <button id="generatePdfBtn">Generate PDF of All Students</button>
+
+  <p id="dailyLogCount"></p>
+
+  <div id="allStudentsList"></div>
+
+  <!-- jsPDF and autotable CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+  <script src="Book.js"></script>
+</body>
+</html>
